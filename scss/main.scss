@@ -3,6 +3,11 @@
 @mixin gradient {
   background: linear-gradient(rgba(17, 7, 254, 0.7), rgba(0, 244, 254, 0.7));
 }
+
+* {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Roboto", "sans-serif";
   line-height: 1.8;
@@ -254,8 +259,4 @@ footer {
     font-size: 30px;
     color: white;
   }
-}
-
-* {
-  overflow-x: hidden;
 }
