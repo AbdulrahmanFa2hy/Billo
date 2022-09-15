@@ -241,5 +241,5 @@ footer a {
 }
 
 * {
-  box-sizing: border-box;
+  overflow-x: hidden;
 }/*# sourceMappingURL=main.css.map */
