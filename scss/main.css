@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Montserrat&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;800;900&display=swap");
 * {
   overflow-x: hidden;
@@ -92,9 +95,14 @@ section .btn:hover {
   }
 }
 
+.container .row {
+  overflow: hidden;
+}
 .section-intro {
   margin-bottom: 40px;
+  overflow: hidden;
 }
+
 @media (max-width: 720px) {
   .section-intro p {
     font-size: 14px;
@@ -106,29 +114,8 @@ section .btn:hover {
   margin: 16px auto;
   background: linear-gradient(to right, rgb(0, 244, 254), #1107fe);
 }
-
-.service .service-img {
-  position: relative;
-}
-.service .service-img .icon {
-  width: 80px;
-  height: 80px;
-  background: linear-gradient(to right, rgb(0, 244, 254), #1107fe);
-  color: #fff;
-  border-radius: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: -40px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.service .service-img .icon i {
-  font-size: 36px;
-}
 .service h5 {
-  margin-top: 60px;
+  margin-top: 25px;
 }
 @media (max-width: 720px) {
   .service {
@@ -152,7 +139,11 @@ section .btn:hover {
   cursor: pointer;
   font-size: 35px;
   transition: all 0.3s ease;
-  background: linear-gradient(to left, rgba(0, 244, 254, 0.9), rgba(17, 7, 254, 0.9));
+  background: linear-gradient(
+    to left,
+    rgba(0, 244, 254, 0.9),
+    rgba(17, 7, 254, 0.9)
+  );
 }
 .about-section .section-intro i:hover {
   transform: translateY(-5px);
@@ -162,7 +153,7 @@ section .btn:hover {
 .features i {
   background: linear-gradient(to top, rgb(0, 244, 254), rgb(17, 7, 254));
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 54px;
   padding-top: 10px;
@@ -172,6 +163,9 @@ section .btn:hover {
   font-size: 14px;
 }
 
+.testimonials .card {
+  margin-bottom: 40px;
+}
 .testimonials .card .card-header {
   padding: 30px 20px;
   display: flex;
@@ -215,11 +209,13 @@ section .btn:hover {
   resize: none;
   border: 1px solid rgba(255, 255, 255, 0.7);
 }
-.form input::-moz-placeholder, .form textarea::-moz-placeholder {
+.form input::-moz-placeholder,
+.form textarea::-moz-placeholder {
   font-size: 14px;
   color: #ededed !important;
 }
-.form input:-ms-input-placeholder, .form textarea:-ms-input-placeholder {
+.form input:-ms-input-placeholder,
+.form textarea:-ms-input-placeholder {
   font-size: 14px;
   color: #ededed !important;
 }
@@ -236,10 +232,14 @@ section .btn:hover {
 footer {
   padding: 30px;
   color: white;
-  background: linear-gradient(to left, rgba(0, 244, 254, 0.9), rgba(17, 7, 254, 0.9));
+  background: linear-gradient(
+    to left,
+    rgba(0, 244, 254, 0.9),
+    rgba(17, 7, 254, 0.9)
+  );
 }
 footer a {
   padding: 0 10px;
   font-size: 30px;
   color: white;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
