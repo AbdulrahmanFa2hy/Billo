@@ -98,6 +98,9 @@ section .btn:hover {
 .container .row {
   overflow: hidden;
 }
+.container .row .col-12 {
+  overflow: hidden;
+}
 .section-intro {
   margin-bottom: 40px;
   overflow: hidden;
